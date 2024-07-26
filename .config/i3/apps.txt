@@ -1,6 +1,8 @@
+# This is what shows up in your Simple App List using Rofi
+
 Chrome Browser,chromium
 File Explorer,nemo
-Notes,xed
+Notes,gnome-text-editor
 SpreadSheets,libreoffice --calc
 Word Documents,libreoffice --writer
 
