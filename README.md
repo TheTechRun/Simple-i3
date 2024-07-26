@@ -13,6 +13,16 @@ chromium, greenclip, gnome-text-editor, libreoffice, and nemo.
 **Note**: *You can go to ~/.config/polybar/modules and alter the App scripts as you like.*
 
 ### <ins>Simple-i3 Install:<ins>
+Easiest method is to run these commands in terminal: 
+```
+sudo apt update
+sudo apt install git wget
+cd ~/  
+wget https://raw.githubusercontent.com/TheTechRun/Simple-i3/master/install.sh
+chmod +x install.sh 
+bash install.sh
+```
+
 Use the *install.sh* script that will install just the config files, fonts, icons, and themes. 
 
 ### You can download the install script and make it executable or just copy and paste in terminal. Be sure to Backup any configs and files that these might replace.
