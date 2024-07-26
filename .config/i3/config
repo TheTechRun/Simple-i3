@@ -19,7 +19,7 @@ set $mod Mod4
 tiling_drag titlebar
 
 # bind theme switcher
-bindsym Control+Shift+T execc bash $HOME/.scripts/TTR-Themer/rofi-themer.sh
+bindsym Control+Shift+T exec bash $HOME/.scripts/rofi-themer.sh
 
 #-----------------------------------------------------------------------------
 # BAR SETUP
@@ -105,8 +105,9 @@ bindsym $mod+F4 layout tabbed
 bindsym Menu exec bash $HOME/.config/i3/universal.sh #Minimal Apps List
 bindsym Mod1+space exec rofi -show drun -show-icons #Program lists
 #bindsym Menu exec rofi -show drun -show-icons -kb-cancel "Menu" #Program lists
-bindsym Mod1+p exec polybar
-bindsym Mod1+c exec bash $HOME/.config/polybar/modules/clipboard.sh # Clipboard
+bindsym $mod+p exec polybar
+bindsym $mod+c exec bash $HOME/.config/polybar/modules/clipboard.sh # Clipboard
+bindsym $mod+t exec alacritty
 
 # ROFI Scripts
 bindsym $mod+Tab exec rofi -show window show-icons #switch windows
@@ -214,7 +215,6 @@ mode "resize" {
 
 # Compositor to stop screen tearing
 exec_always --no-startup-id picom &
-
 
 
 
