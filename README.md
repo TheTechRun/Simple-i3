@@ -50,28 +50,28 @@ This comes with 8 built in themes that you can switch on the fly (See Keybinds).
 
 ![text](https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Screenshot%201.png)
 
-!text(https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Screenshot%202.png)
+![text](https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Screenshot%202.png)
 
-!text
+![text]
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Better-Blue.png)
 
-!text
+![text]
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Gigantic-Green.png)
 
 !git add . && git commit -m "another commit" && git push origin master --force
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Gruesome-Gray.png)
 
-!text
+![text]
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Magic-Magenta.png)
 
-!text
+![text]
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Outrageous-Orange.png)
 
-!text
+![text]
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Party-Pink.png)
 
-!text
+![text]
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Perfect-Purple.png)
 
-!text
+![text]
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Wonderful-Wheat.png)
