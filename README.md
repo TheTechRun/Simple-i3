@@ -58,7 +58,7 @@ This comes with 8 built in themes that you can switch on the fly (See Keybinds).
 ![text]
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Gigantic-Green.png)
 
-!git add . && git commit -m "another commit" && git push origin master --force
+![text]
 (https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Gruesome-Gray.png)
 
 ![text]
