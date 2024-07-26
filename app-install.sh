@@ -2,7 +2,8 @@
 
 # RUN THIS SCRIPT AS SUDO
 
-apt install -y curl dmenu dunst git i3 nitrogen polybar rofi starship xorg wget alacritty arandr picom powerline libnotify-bin light-locker lightdm slick-greeter xautolock chromium greenclip gnome-text-editor libreoffice nemo 
+# Install apps. Remove or add to your liking.
+apt install -y alacritty arandr chromium curl dmenu dunst git gnome-text-editor greenclip i3 libnotify-bin libreoffice light-locker lightdm nemo network-manager-gnome nitrogen picom polybar powerline rofi slick-greeter starship wget xautolock xorg
 
 # Install Starship
 curl -sS https://starship.rs/install.sh | sh

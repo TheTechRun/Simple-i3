@@ -2,7 +2,7 @@
 **A user friendly i3 setup that I made for family members that I decided to share with you!**
 
 ### <ins>Dependencies<ins>: 
-dmenu, dunst, git, i3, nitrogen, polybar, rofi, xorg, and alacritty.
+dmenu, dunst, git, i3, network-manager-gnome, nm-applet, nitrogen, polybar, rofi, xorg, and alacritty.
 
 ### <ins>**OPTIONAL** Dependencies: <ins>
 arandr, curl, picom, powerline, libnotify-bin, light-locker, lightdm, starship, slick-greeter, and xautolock.
