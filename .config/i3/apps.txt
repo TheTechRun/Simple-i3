@@ -1,0 +1,6 @@
+Chrome Browser,chromium
+File Explorer,nemo
+Notes,xed
+SpreadSheets,libreoffice --calc
+Word Documents,libreoffice --writer
+

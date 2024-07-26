@@ -1,0 +1,72 @@
+# Nordic-darker color palette
+#D70751	user
+#000000	dir
+#D70751	git
+#D70751	version
+#000000	doc (from dracula color palette)
+#000000	time (from dracula color palette)
+
+# theme color #D70751	
+
+# some extra symbols
+# 
+# 
+
+format = """
+[░▒▓](#D70751)\
+
+$username\
+(bg:#000000 fg:#D70751)\
+$directory\
+[](fg:#000000 bg:#D70751)\
+[](fg:#D70751 bg:#000000)\
+[](fg:#000000 bg:#D70751)\
+$time\
+[ ](fg:#D70751)\
+\n
+$cmd_duration\
+$character\
+[](fg:#D70751 bg:#000000)\
+"""
+#add_newline = false
+
+[line_break]
+disabled = false
+
+[username]
+show_always = true
+style_user = "bg:#D70751"
+style_root = "b"
+format = '[ ctech ]($style)'
+disabled = false
+
+[os]
+style = "bg:#D70751"
+disabled = true # Disabled by default
+
+[directory]
+style = "bg:#000000"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#D70751"
+format = '[  $time ]($style)'
+	
+[character]
+success_symbol = '[ ➜](#D70751)'
+error_symbol = '[ ➜](bold red)'
+#style = "bg:#D70751"
+
+[cmd_duration]
+min_time = 1000
+format = ' [$duration](#D70751)'

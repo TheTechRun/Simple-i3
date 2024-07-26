@@ -1,0 +1,220 @@
+
+#  ____             __ _                          _   _           
+# / ___|___  _ __  / _(_) __ _ _   _ _ __ ___  __| | | |__  _   _ 
+#| |   / _ \| '_ \| |_| |/ _` | | | | '__/ _ \/ _` | | '_ \| | | |
+#| |__| (_) | | | |  _| | (_| | |_| | | |  __/ (_| | | |_) | |_| |
+# \____\___/|_| |_|_| |_|\__, |\__,_|_|  \___|\__,_| |_.__/ \__, |
+#                        |___/                              |___/ 
+# _____ _____ ____  
+#|_   _|_   _|  _ \ 
+#  | |   | | | |_) |
+#  | |   | | |  _ < 
+#  |_|   |_| |_| \_\
+
+
+# i3-msg reload to Reload 
+# chmod +x $HOME/.config/polybar/modules/*.sh && chmod +x $HOME/.config/i3/*.sh
+
+set $mod Mod4
+tiling_drag titlebar
+
+# bind theme switcher
+bindsym Control+Shift+T execc bash $HOME/.scripts/TTR-Themer/rofi-themer.sh
+
+#-----------------------------------------------------------------------------
+# BAR SETUP
+#------------------------------------------------------------------------------
+
+# POLYBAR
+exec --no-startup-id polybar
+#default_border none
+
+
+#-----------------------------------------------------------------------------
+# WINDOWS THEME SETUP
+#------------------------------------------------------------------------------
+
+# GAPS
+gaps inner 10
+gaps outer 5
+
+# CHANGE WINDOW BORDER COLORS
+# Variable Setups
+set $main FF95D0
+set $secondary 1E1E1E
+set $focusedtitletext 000000
+set $unfocusedtitletext ffffff
+
+
+# class        border  background  text  indicator child_border
+
+client.focused  #$focusedtitletext  #$main #$focusedtitletext  #$secondary  #$secondary 
+
+client.focused_inactive #$main #$secondary #$unfocusedtitletext #$main #$main
+
+client.unfocused #$secondary #$secondary #$unfocusedtitletext #$main #$main
+
+client.urgent #$main #$main #$unfocusedtitletext #$main #$main
+
+client.placeholder  #$secondary #$main  #$secondary  #$secondary  #$secondary 
+
+
+#---------------------------------------------------------------------
+# STARTUP SECTION
+#---------------------------------------------------------------------
+
+# Startup Apps
+exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
+exec --no-startup-id xautolock
+exec --no-startup-id polybarl
+exec --no-startup-id light-locker
+exec --no-startup-id greenclip daemon
+
+# WALLPAPERS
+exec_always --no-startup-id sleep 3 && nitrogen --restore
+
+#Monitor & Screen layouts
+exec_always --no-startup-id bash $HOME/.config/i3/monitors.sh
+
+# Swipe gestures autostart
+exec --no-startup-id libinput-gestures-setup start
+
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id nm-applet
+
+#--------------------------------------------------------------------------------
+# LOCKSCREEN SECTION
+#--------------------------------------------------------------------------------
+# LightDM
+bindysm $mod+l exec light-locker-command -l
+bindsym Mod1+l exec light-locker-command -l
+exec_always --no-startup-id xautolock -time 10 -locker "light-locker-command -l"
+
+#font JetBrainsMono Nerd Font Mono Bold 8
+font pango:DejaVu Sans Mono 8
+
+#-------------#CONTAINER LAYOUTS (F1-F4)
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+F1 layout stacking
+bindsym $mod+F2 layout toggle split
+bindsym $mod+F3 floating toggle
+bindsym $mod+F4 layout tabbed
+
+                        # KEYBOARD SHORTCUTS
+bindsym Menu exec bash $HOME/.config/i3/universal.sh #Minimal Apps List
+bindsym Mod1+space exec rofi -show drun -show-icons #Program lists
+#bindsym Menu exec rofi -show drun -show-icons -kb-cancel "Menu" #Program lists
+bindsym Mod1+p exec polybar
+bindsym Mod1+c exec bash $HOME/.config/polybar/modules/clipboard.sh # Clipboard
+
+# ROFI Scripts
+bindsym $mod+Tab exec rofi -show window show-icons #switch windows
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# kill focused window
+#bindsym $mod+Shift+q kill
+bindsym $mod+q kill
+
+# FOCUS ON WINDOW
+# Cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# MOVE FOCUSED WINDOW
+# Cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+#bindsym Control+1 split h
+
+# split in vertical orientation
+#bindsym Control+2 split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+Return fullscreen
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+
+#----------------------------------------------------------------------------- 
+# WORKSPACE SETUP 
+#------------------------------------------------------------------------------
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1 
+bindsym $mod+2 workspace $ws2 
+bindsym $mod+3 workspace $ws3 
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws0
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws0
+
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+bindsym $mod+r mode "resize"
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+# Compositor to stop screen tearing
+exec_always --no-startup-id picom &
+
+
+
+
