@@ -50,4 +50,28 @@ This comes with 8 built in themes that you can switch on the fly (See Keybinds).
 
 ![text](https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Screenshot%201.png)
 
-![text](https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Screenshot%202.png)
+![](https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Screenshot%202.png)
+
+![]
+(https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Better-Blue.png)
+
+![]
+(https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Gigantic-Green.png)
+
+![]
+(https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Gruesome-Gray.png)
+
+![]
+(https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Magic-Magenta.png)
+
+![]
+(https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Outrageous-Orange.png)
+
+![]
+(https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Party-Pink.png)
+
+![]
+(https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Perfect-Purple.png)
+
+![]
+(https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Wonderful-Wheat.png)
