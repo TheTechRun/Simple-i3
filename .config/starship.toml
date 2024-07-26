@@ -37,7 +37,7 @@ disabled = false
 show_always = true
 style_user = "bg:#D70751"
 style_root = "b"
-format = '[ ctech ]($style)'
+format = '[ username_here ]($style)'
 disabled = false
 
 [os]

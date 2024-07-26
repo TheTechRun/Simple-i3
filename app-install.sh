@@ -16,5 +16,8 @@ chmod +x greenclip
 mv greenclip /usr/local/bin
 greenclip daemon
 
+# In ~/.config/starship.toml, you can change the disto logo and username on line 40
+# Set transparency for different apps in ~/.config/picom.conf
+
 exit
 

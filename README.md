@@ -1,5 +1,5 @@
 # Simple-i3
-**A user friendly i3 setup that I made for family members that I decided to share with you! **
+**A user friendly i3 setup that I made for family members that I decided to share with you!**
 
 ### <ins>Dependencies<ins>: 
 dmenu, dunst, git, i3, network-manager-gnome, nm-applet, nitrogen, polybar, rofi, xorg, and alacritty.
