@@ -1,5 +1,5 @@
 # Simple-i3
-**A user friendly i3 setup that I made for family members that I decided to share with you!**
+**A user friendly i3 setup that I made for family members that I decided to share with you! **
 
 ### <ins>Dependencies<ins>: 
 dmenu, dunst, git, i3, network-manager-gnome, nm-applet, nitrogen, polybar, rofi, xorg, and alacritty.
@@ -45,5 +45,9 @@ Use the *install.sh* script that will install just the config files, fonts, icon
 
 **Alt+L** = Lockscreen (light-locker)
 
+### <ins>TTR Theme Switcher<ins>: 
+This comes with 8 built in themes that you can switch on the fly (See Keybinds). 
 
+![text](https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Screenshot%201.png)
 
+![text](https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Screenshot%202.png)
