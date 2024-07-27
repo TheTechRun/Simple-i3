@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-xed
+gnome-text-editor

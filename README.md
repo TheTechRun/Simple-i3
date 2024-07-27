@@ -1,6 +1,8 @@
 # Simple-i3
 **A user friendly i3 setup that I made for family members that I decided to share with you!**
 
+***Tested and working on Debian 12 Bookworm but should be good to go on many other distros with some slight alterations*** 
+
 ### <ins>Dependencies<ins>: 
 dmenu, dunst, git, i3, network-manager-gnome, nitrogen, polybar, rofi, xorg, and alacritty.
 
@@ -23,18 +25,24 @@ chmod +x install.sh 
 bash install.sh
 ```
 
-Use the *install.sh* script that will install just the config files, fonts, icons, and themes. 
+Use the **install.sh** script that will install just the config files, fonts, icons, and themes. 
 
-### You can download the install script and make it executable or just copy and paste in terminal. Be sure to Backup any configs and files that these might replace.
+### You can download the install script and make it executable or just copy and paste in terminal. Be sure to Backup any configs and/or files that these might replace.
 
 ### <ins>OPTIONAL (Recommended) App install: <ins>
- The *app-install.sh* will install the *Optional Dependencies* and *Apps* (mentioned in the sections above) on debian based systems using apt. You will need to run this script as sudo. 
+ The **app-install.sh** will install the *Optional Dependencies* and *Apps* (mentioned in the sections above) on debian based systems using apt. You will need to run this script as sudo. 
  
+After running the **install.sh**, this simple command will run the **app-install.sh**:
+
+`sudo ~/.scripts/app-install.sh`
+
+Be sure to pay attention to the prompts and reboot.
+
  *Alter this script to work with your distro (dnf, pacman, etc) as you like.*
 
 
 
-## <ins>Keybinds (See i3 config):<ins>
+## <ins>Some Keybinds (See i3 config):<ins>
 **$mod = Super Key**
 
 **Control+Shift+T** = Theme Switcher
@@ -55,8 +63,10 @@ Use the *install.sh* script that will install just the config files, fonts, icon
 
 **Alt+L** = Lockscreen (light-locker)
 
+**See ~/.config/i3/config for the rest of the keybinds.**
+
 ### <ins>TTR Theme Switcher<ins>: 
-This comes with 8 built in themes that you can switch on the fly (See Keybinds). 
+This comes with 8 built in themes that can be switched on the fly (See Keybinds). The theme switcher changes the main color in i3, rofi, dunst, starship prompt, polybar, wallpaper, and GTK themes & icons.
 
 ![text](https://github.com/TheTechRun/Simple-i3/blob/master/screenshots/Screenshot%201.png)
 

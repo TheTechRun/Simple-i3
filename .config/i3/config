@@ -40,7 +40,7 @@ gaps outer 5
 
 # CHANGE WINDOW BORDER COLORS
 # Variable Setups
-set $main FF95D0
+set $main D70751
 set $secondary 1E1E1E
 set $focusedtitletext 000000
 set $unfocusedtitletext ffffff
