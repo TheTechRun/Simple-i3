@@ -1,5 +1,5 @@
 # Simple-i3
-**A user friendly i3 setup that I made for family members that I decided to share with you!**
+**A user friendly simple i3 setup that I made for family members that I decided to share with you! Best to install from a terminal only environment for a mostly bloat free experience.**
 
 ***Tested and working on Debian 12 Bookworm but should be good to go on many other distros with some slight alterations*** 
 
