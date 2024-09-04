@@ -40,6 +40,8 @@ Be sure to pay attention to the prompts and reboot.
 
  *Alter this script to work with your distro (dnf, pacman, etc) as you like.*
 
+ Here's a [video](https://www.youtube.com/watch?v=bzwJdVr42sc) of install instructions as well.
+
 
 
 ## <ins>Some Keybinds (See i3 config):<ins>
