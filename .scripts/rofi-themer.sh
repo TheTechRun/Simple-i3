@@ -149,6 +149,10 @@ starship init bash
 
 notify-send "Theme Changed To $NEW_COLOR"
 
+pkill polybar
+
+polybar &
+
 # Reload i3
 i3-msg restart
 
