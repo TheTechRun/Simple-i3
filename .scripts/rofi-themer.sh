@@ -5,7 +5,7 @@ dir="$HOME/.config/rofi/launchers/type-ttr"
 theme='style-ttr'
 
 # Rofi menu to select color option
-CHOICE=$(echo -e "Better Blue\nGigantic Green\nGruesome Gray\nMagic Magenta\nOutrageous Orange\nParty Pink\nPerfect Purple\nTerrific Teal\nWonderful Wheat" | rofi \
+CHOICE=$(echo -e "Better Blue\nGigantic Green\nGruesome Gray\nMagic Magenta\nOutrageous Orange\nParty Pink\nPerfect Purple\nWonderful Wheat" | rofi \
     -dmenu \
     -i \
     -theme ${dir}/${theme}.rasi \
