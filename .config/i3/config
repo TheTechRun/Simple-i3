@@ -144,6 +144,7 @@ bindsym $mod+p exec polybar
 bindsym $mod+c exec bash $HOME/.config/polybar/modules/clipboard.sh # Clipboard
 bindsym $mod+t exec alacritty
 bindsym $mod+w exec chromium
+bindsym $mod+f exec nemo
 
 # ROFI Scripts
 bindsym $mod+Tab exec rofi -show window show-icons #switch windows
