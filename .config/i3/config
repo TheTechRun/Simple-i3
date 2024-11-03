@@ -23,28 +23,64 @@ bindsym Control+Shift+T exec bash $HOME/.scripts/rofi-themer.sh
 
 #-----------------------------------------------------------------------------
 # BAR SETUP
-#------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
 
 # POLYBAR
-exec --no-startup-id polybar
+#exec_always --no-startup-id $HOME/.config/polybar/config.ini
 #default_border none
 
+#i3bar here:
+    bar {
+           position top    
+           status_command i3blocks -c ~/.config/i3/i3blocks/i3blocks.conf
+          # font pango:Noto Sans Brahmi Bold 14
+          #font pango:JetBrainsMonoNL Nerd Font Propo Bold 12
+          font pango:JetBrainsMono Nerd Font Mono Bold 12
+          #font pango:ProFontIIx Nerd Font Mono Bold 11
+           # font pango: Literation Nerd Font Mono Bold 12
+           tray_output primary
+        colors {
+#<colorclass>       <border> <background> <text>
+separator #AAAAAA
+background #$secondary
+statusline #B1B1B1
+focused_workspace #$secondary  #$main #$secondary
+active_workspace  #$main #ffffff
+  #$main
+inactive_workspace  #$main #$secondary  #$main
+urgent_workspace #eb709b #eb709b #ffffff
+   }
+}
 
-#-----------------------------------------------------------------------------
+
+#---------------------------------------------------------------------
 # WINDOWS THEME SETUP
-#------------------------------------------------------------------------------
+#---------------------------------------------------------------------
 
-# GAPS
+# GAPS & Wallpaper
 gaps inner 10
 gaps outer 5
+exec_always --no-startup-id sleep 3 && nitrogen --restore # wallpapers
 
-# CHANGE WINDOW BORDER COLORS
-# Variable Setups
-set $main D70751
+
+# Window Title Font
+  font pango:JetBrainsMonoNL Nerd Font Propo Bold 12
+#font pango:JetBrainsMono Nerd Font Mono Bold 12
+#font pango:ProFontIIx Nerd Font Mono-Regular Bold 14
+#font pango:Noto Sans Brahmi Bold 10
+#font pango:JetBrainsMono Nerd Font Mono Bold 14
+#font pango:DejaVu Sans Mono Bold 14       
+
+
+
+# Colors
+set $main 348F91
 set $secondary 1E1E1E
 set $focusedtitletext 000000
 set $unfocusedtitletext ffffff
 
+
+# CHANGE WINDOW BORDER COLORS
 
 # class        border  background  text  indicator child_border
 
@@ -66,7 +102,6 @@ client.placeholder  #$secondary #$main  #$secondary  #$secondary  #$secondary
 # Startup Apps
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec --no-startup-id xautolock
-exec --no-startup-id polybarl
 exec --no-startup-id light-locker
 exec --no-startup-id greenclip daemon
 
@@ -155,6 +190,20 @@ bindsym $mod+a focus parent
 #----------------------------------------------------------------------------- 
 # WORKSPACE SETUP 
 #------------------------------------------------------------------------------
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws0 "0"
+
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1 
