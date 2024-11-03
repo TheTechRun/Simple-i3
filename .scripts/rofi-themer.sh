@@ -40,10 +40,10 @@ elif [[ "$CHOICE" == "Perfect Purple" ]]; then
     NEW_COLOR="A27AE4"
     POLYBAR_COLOR_INPUT="A27AE4"
     STARSHIP_COLOR="A27AE4"  
-elif [[ "$CHOICE" == "Terrific Teal" ]]; then
-    NEW_COLOR="348F91"
-    POLYBAR_COLOR_INPUT="348F91"
-    STARSHIP_COLOR="348F91"
+#elif [[ "$CHOICE" == "Terrific Teal" ]]; then
+  #  NEW_COLOR="348F91"
+   # POLYBAR_COLOR_INPUT="348F91"
+   # STARSHIP_COLOR="348F91"
 elif [[ "$CHOICE" == "Wonderful Wheat" ]]; then
     NEW_COLOR="F9C470"
     POLYBAR_COLOR_INPUT="F9C470"
