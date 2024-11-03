@@ -26,31 +26,31 @@ bindsym Control+Shift+T exec bash $HOME/.scripts/rofi-themer.sh
 #-----------------------------------------------------------------------------
 
 # POLYBAR
-#exec_always --no-startup-id $HOME/.config/polybar/config.ini
+exec_always --no-startup-id $HOME/.config/polybar/config.ini
 #default_border none
 
 #i3bar here:
-    bar {
-           position top    
-           status_command i3blocks -c ~/.config/i3/i3blocks/i3blocks.conf
+#    bar {
+ #          position top    
+   #        status_command i3blocks -c ~/.config/i3/i3blocks/i3blocks.conf
           # font pango:Noto Sans Brahmi Bold 14
           #font pango:JetBrainsMonoNL Nerd Font Propo Bold 12
           font pango:JetBrainsMono Nerd Font Mono Bold 12
           #font pango:ProFontIIx Nerd Font Mono Bold 11
            # font pango: Literation Nerd Font Mono Bold 12
-           tray_output primary
-        colors {
+  #         tray_output primary
+     #   colors {
 #<colorclass>       <border> <background> <text>
-separator #AAAAAA
-background #$secondary
-statusline #B1B1B1
-focused_workspace #$secondary  #$main #$secondary
-active_workspace  #$main #ffffff
+#separator #AAAAAA
+#background #$secondary
+#statusline #B1B1B1
+#focused_workspace #$secondary  #$main #$secondary
+#active_workspace  #$main #ffffff
   #$main
-inactive_workspace  #$main #$secondary  #$main
-urgent_workspace #eb709b #eb709b #ffffff
-   }
-}
+#inactive_workspace  #$main #$secondary  #$main
+#urgent_workspace #eb709b #eb709b #ffffff
+ #  }
+#}
 
 
 #---------------------------------------------------------------------
@@ -74,7 +74,7 @@ exec_always --no-startup-id sleep 3 && nitrogen --restore # wallpapers
 
 
 # Colors
-set $main 348F91
+set $main CC6088
 set $secondary 1E1E1E
 set $focusedtitletext 000000
 set $unfocusedtitletext ffffff
@@ -143,6 +143,7 @@ bindsym Mod1+space exec rofi -show drun -show-icons #Program lists
 bindsym $mod+p exec polybar
 bindsym $mod+c exec bash $HOME/.config/polybar/modules/clipboard.sh # Clipboard
 bindsym $mod+t exec alacritty
+bindsym $mod+w exec chromium
 
 # ROFI Scripts
 bindsym $mod+Tab exec rofi -show window show-icons #switch windows
@@ -264,6 +265,5 @@ mode "resize" {
 
 # Compositor to stop screen tearing
 exec_always --no-startup-id picom &
-
 
 
